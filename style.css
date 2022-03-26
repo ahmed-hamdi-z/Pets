@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.header{
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("img/velizar-ivanov-lz_VB9yEc_c-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+nav{
+    flex: 1;
+}
+
+nav ul{
+    margin: 5vh 0 0 15vh;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fefeff;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #D9A404;
+}
+
+.logo
+{
+    margin: 5vh 15vh 0 0;
+}
+.title{
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.title h3{
+    color: #ffffff;
+    font-size: 9rem;
+    font-family: 'Cookie', cursive;
+    text-shadow: 1px 1px 0 rgb(53, 56, 4);
+}
+
+.subtitle{
+    height: 15vh;
+    background-color:#06111C;
+    font-family: 'Crimson Pro', serif;
+    color: #ffffff;
+}
+
+.subtitle h1 {
+    padding-top: 3vh;
+    font-size: 3.5rem;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    align-items: center;
+}
+.Recent{
+    padding: 5vh 10vh 10vh 10vh ;
+}
+.img-recent{
+    width: 100%;
+    height: 300px;
+    border-radius: 15%;
+    border: 3px solid rgb(108, 114, 113);
+}
+.boxing{
+    border-radius: 5%;
+    padding: 0 1vh 2vh 1vh;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(108, 114, 113);
+}
+
+.Products{
+    padding: 10vh ;
+    
+}
+
+.card {
+    margin-bottom: 3vh;
+}
+.card-body a {
+    margin-left: 10vh;
+    background-color: #D4D4D4;
+    color: #212121;
+    border-radius: 25% 10%;
+}
+
+.card:hover{
+    
+    border: 3px solid #06111C;
+    border-radius: 3%;
+}
+
+
+
+
+.footer{
+    background: #06111C;
+    color: #BEC7C7;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #BEC7C7;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.footer-col-1{
+    flex-basis: 33%;
+  
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+    flex-basis: 33%;
+}
+
+ .footer-col-3{
+    flex-basis: 33%;
+    text-align: center;
+    
+    
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #06111C;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+
+.footer hr{
+    border: none;
+    background: #5b5b5b;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--Details--*/
+
+
+.Details{
+    height: 30vh;
+    background-color: #06111C;
+    
+}
+
+.about{
+  margin-top: 15vh;
+ 
+}
+
+.gallary{
+    background-color: #D4D4D4;
+    padding-top: 10vh;
+
+}
+.pet-info{
+    text-align: center;
+}
+.pet-info h1{
+
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+}
+.pet-info h2{
+    font-size: 2rem;
+    font-family: 'Crimson Pro', serif;
+}
+.container-gallary{
+    padding-top: 5vh;
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+}
+.img-gallary{
+    margin-left: 3px;
+    object-fit: cover;
+    width: 25%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.image-light{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(110%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+.product{
+    object-fit: cover;
+    width: 35%;
+    border-radius: 10%;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.bx-x{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/*--form--*/
+
+
+.form{
+    font-family: 'Cookie', cursive;
+    background-color: #f0efef;
+    margin-top: 20px;
+    padding: 0 55vh 0 55vh;
+  
+}
+.Serum{
+    margin-top: 20px;
+}
+.gender{
+    font-size: 25px;
+}
+
+.form-select{
+    margin-left: 60px;
+    border-radius: 10%;
+    border: 2px solid #06111C;
+}
+.disc input{
+    height: 200px;
+}
+.form-check{
+    margin-top: 30px;
+}
+
+.form-label{
+    
+  font-size: 25px;
+  color: #06111C;
+  margin-top: 30px;
+}
+
+
+
+
+
