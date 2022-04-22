@@ -28,13 +28,11 @@ nav ul{
 
 nav ul li{
     font-size: 1.5em;
-    text-decoration: none;
     display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a{
-    text-decoration: none;
     color:#fefeff;
 }
 
@@ -312,3 +310,67 @@ nav ul li a:hover{
 
 
 
+/*--gallary--*/
+
+.container-gallary{
+    padding-top: 5vh;
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+}
+.img-g{
+    margin-left: 3px;
+    object-fit: cover;
+    width: 25%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.image-l{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(110%);
+    transition: transform .2s ease-in-out;
+}
+.showw{
+    transform: translate(0);
+}
+.produc{
+    object-fit: cover;
+    width: 35%;
+    border-radius: 10%;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImagee{
+    transform: scale(1);
+}
+.bx-x{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*----media query for less than 600 screen size*/
+@media only screen and (max-width:600px){
+    .logo{
+       position: relative;
+       margin-left: 19%;
+    }
+}

@@ -24,4 +24,3 @@ var showimage = (image)=>{
     containerlight.classList.toggle('show')
     imageslight.classList.toggle('showImage')
 }
-
